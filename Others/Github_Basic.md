@@ -1,11 +1,11 @@
 # git基本操作
-> git init - 初始化仓库
-> git status - 查看仓库状态
-> git add - 向暂存区中添加文件
-> git commit - 保存仓库的历史纪录    # git commit -m "First Commit"
-> git status - 查看仓库状态
-> git log - 查看提交日志  # git log --pretty=short 只显示提交信息的第一行
-> git diff - 查看更改前后的差别
+>* git init - 初始化仓库
+>* git status - 查看仓库状态
+>* git add - 向暂存区中添加文件
+>* git commit - 保存仓库的历史纪录    # git commit -m "First Commit"
+>* git status - 查看仓库状态
+>* git log - 查看提交日志  # git log --pretty=short 只显示提交信息的第一行
+>* git diff - 查看更改前后的差别
 
 # 分支的操作
 >git branch - 显示分支一览表
@@ -15,9 +15,9 @@
 ### 切换到feature－A分支并进行提交
 
 > **创建/切换feature-A**
-> git checkout -b feature-A
-> git branch feature-A
-> git checkout feature-A
+>* git checkout -b feature-A
+>* git branch feature-A
+>* git checkout feature-A
 
 >**提交**
 >git commit -m "Add feature-A"
@@ -36,8 +36,8 @@
 
 # 推送远程仓库
 
-> git remote add <name> <address>
-> git push -u <name> <branch>
+>* git remote add <name> <address>
+>* git push -u <name> <branch>
 
 # 从远程仓库获取
 
