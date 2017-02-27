@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../static/css/login.css" />
+</head>
+<body>
+    <div id="wrapper">
+    	<div id="header">
+    		<div id="topic">
+    			<h1>管理学生可视化系统</h1>
+    		</div>
+    	</div>
+    	<div id="content">
+    		<div id="main">
+    			<div id="main-topic" >
+    			<img src="../static/images/child.png">
+    			</div>
+    			<form action="" method="post">
+    				<div id="main-content">
+    				<input id="username" class="sumit" placeholder="用户名" name="uesername" autofocus></input>
+    				<input id="password" class="sumit" placeholder="密码" name="password" type="password"></input>
+    			    <div id="drop">
+    			    	
+    			    </div>
+    			</div>
+    			<div id="main-footer">
+    				<button id="sumit-btn" type="sumit">
+    					登    录
+    				</button>
+    			</div>
+    			</form>
+    		</div>
+    	</div>
+    	<div id="footer">
+    		<p>版权归 Peter Sofi 所有</p>
+    	</div>
+    </div>
+
+    <script type="text/javascript">
+	    function keyUp(){
+	    		var mainContent = document.getElementById('main-content');
+	    		mainContent.addEventListener('keyup',function(e){
+	            keyLogin(e);
+	    		});
+	    	}
+    	 function keyLogin(e){
+    		var password = document.getElementById('password');
+            if (e.keyCode==13)  //回车键的键值为13
+            {
+            	switch(e.target.id){
+        	    case 'username':
+                password.focus();
+                break
+                case'password':
+                // sumitLogin();
+                break
+            }
+        }
+        }
+        keyUp();
+    </script>
+    
+</body>
+</html>
